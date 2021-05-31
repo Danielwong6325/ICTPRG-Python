@@ -1,0 +1,10 @@
+foodlist = [" Pizza", " Pancake", " Chips", " Burgers", " Pasta"]
+print (foodlist)
+user = input("which item you would like to change:")
+index1 = foodlist.index(user)
+print("The location of food", user , "is at", index1)
+foodlist.remove(user)
+print(foodlist)
+replace = input("what item you would like to change with :")
+foodlist.insert(index1,replace)
+print(foodlist)
